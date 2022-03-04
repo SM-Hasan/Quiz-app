@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Apps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Scheherazade+New:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd4377ee4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="myQuizApps">
+        <div class="image">
+            <img src="./image/img-1.svg" alt="">
+        </div>
+        <div class="text">
+            <h3>Quiz Apps With Fixed Time</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error modi minima dolores iusto. Minus tempore in eos est vel fugit provident</p>
+            <h3>Quiz Apps With Fixed Time</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, ut.</p>
+        </div>
+        <div class="myBtn">
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="rulesBox" id="rulesBox">
+        <div class="rulesTitle">
+            Some rules of the Quiz
+        </div>
+        <div class="container">
+            <div class="rulesList">
+                <ol>
+                    <li> You will have only <span style="color:#4C86CE">15 second</span> per each question.</li>
+                    <li>Once you select your answer, It can't be undone.</li>
+                    <li>You can't select ant option once time goes off.</li>
+                    <li>You can't exit from the question while you're playing.</li>
+                    <li>You'll get points on the basis of your correct answers.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="buttonLeft" id="exitQuiz">Exit Quiz</button>
+            <button class="buttonRight" id="continue">Continue</button>
+        </div>
+    </div>
+
+    <div class="questionArea" id="questionArea">
+        <header class="questionHeader">
+            <div class="questionTitle">
+                <span>Start Exam</span>
+            </div>
+            <div class="timeCount">
+                <div class="timeLeft">Time Left</div>
+                <div class="seconds" id="seconds">15</div>
+            </div>
+            <div class="timeLine" id="timeLine"></div>
+        </header>
+        <div class="questionBody">
+            <div class="questionNumber" id="questionNumber">
+            </div>
+            <div class="optionsList" id="optionList">
+            </div>
+        </div>
+        <footer>
+            <div class="total-Question" id="totalQuestion">
+            </div>
+            <button class="nextBtn" id="nextBtn">Next Qus</button>
+        </footer>
+    </div>
+    <div class="resultBox">
+        <div class="resultImg">
+            <img src="./image/winner.svg" alt="">
+        </div>
+        <div class="completeTask">You Have Finish This Exam</div>
+        <div class="scoreText">
+        </div>
+        <div class="buttons2">
+            <button class="restart1">Replay</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
